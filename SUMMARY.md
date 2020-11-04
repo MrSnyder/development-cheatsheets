@@ -1,11 +1,5 @@
 # Table of contents
 
-* [MrSnyder's Cheatsheets](README.md)
-* [Python Cheatsheet](python.md)
-* [RegEx Cheatsheet](regex.md)
-* [RESTful Cheatsheet](restful.md)
-* [SQL Cheatsheet](sql.md)
-
 ## Java
 
 * [Java Basics](java/java.md)
@@ -15,3 +9,12 @@
 
 * [Docker Basics](docker/basics.md)
 
+## Misc
+
+* [Architecture](misc/architecture.md)
+* [FOSSGIS](misc/fossgis.md)
+* [Package management](misc/package_management.md)
+* [Python](misc/python.md)
+* [RegEx](misc/regex.md)
+* [RESTful](misc/restful.md)
+* [SQL](misc/sql.md)
