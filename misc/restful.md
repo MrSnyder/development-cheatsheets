@@ -1,4 +1,4 @@
-# RESTful Cheatsheet
+# RESTful
 
 DISCLAIMER: This document is mostly _not_ about pure REST \(or "RESTful"\) APIs in the original sense intended by Roy Fielding. To my knowledge, most APIs found in the wild do not really qualify to be called RESTful, as they only use a subset of the ideas described by Roy Fielding.
 

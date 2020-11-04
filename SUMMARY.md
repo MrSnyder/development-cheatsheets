@@ -1,5 +1,7 @@
 # Table of contents
 
+* [Introduction](README.md)
+
 ## Java
 
 * [Java Basics](java/java.md)
@@ -18,3 +20,4 @@
 * [RegEx](misc/regex.md)
 * [RESTful](misc/restful.md)
 * [SQL](misc/sql.md)
+

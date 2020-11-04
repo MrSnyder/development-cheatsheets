@@ -1,6 +1,6 @@
-# Java Cheatsheet
+# Java Basics
 
-* [Jenkov Tutorials](http://tutorials.jenkov.com/)
+* Tutorial: [Jenkov Tutorials](http://tutorials.jenkov.com/)
 
 ## Inner, anonymous classes and lambdas
 

@@ -1,4 +1,4 @@
-# SQL Cheatsheet
+# SQL
 
 ## MySQL
 
@@ -15,4 +15,5 @@ GRANT ALL PRIVILEGES ON my_stuff.* TO 'my_stuff'@'%';
 uninstall plugin validate_password;
 ```
 
-* https://stackoverflow.com/questions/5239376/mysql-localhost-127-0-0-1-problem
+* [https://stackoverflow.com/questions/5239376/mysql-localhost-127-0-0-1-problem](https://stackoverflow.com/questions/5239376/mysql-localhost-127-0-0-1-problem)
+

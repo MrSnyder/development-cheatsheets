@@ -1,8 +1,9 @@
-# Linux Package Management Cheatsheet
+# Package management
 
 ## Debian/Ubuntu: apt
 
 ### Searching / locating packages
+
 ```bash
 # list installed packages
 dpkg -l | less
@@ -14,7 +15,7 @@ dpkg -S /usr/bin/docker
 apt-file find /usr/bin/docker
 ```
 
-
 ### Repositories
 
-https://linuxize.com/post/how-to-add-apt-repository-in-ubuntu/
+[https://linuxize.com/post/how-to-add-apt-repository-in-ubuntu/](https://linuxize.com/post/how-to-add-apt-repository-in-ubuntu/)
+
