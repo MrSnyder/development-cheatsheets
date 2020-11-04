@@ -2,7 +2,6 @@
 
 Assorted braindumps for software development-related topics and technologies.
 
-
 ## Java
 
 * [Java](java.md)
@@ -14,3 +13,4 @@ Assorted braindumps for software development-related topics and technologies.
 ## General architecture
 
 * [RESTful](restful.md)
+
