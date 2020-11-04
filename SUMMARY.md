@@ -1,11 +1,17 @@
 # Table of contents
 
 * [MrSnyder's Cheatsheets](README.md)
-* [Java Cheatsheet](java.md)
 * [Python Cheatsheet](python.md)
+* [RegEx Cheatsheet](regex.md)
 * [RESTful Cheatsheet](restful.md)
+* [SQL Cheatsheet](sql.md)
+
+## Java
+
+* [Java Basics](java/java.md)
+* [JPA](java/jpa.md)
 
 ## Docker
 
-* [Docker Basics](docker/untitled.md)
+* [Docker Basics](docker/basics.md)
 
