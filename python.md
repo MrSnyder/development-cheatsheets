@@ -1,4 +1,4 @@
-# Python Cheatsheet V2
+# Python Cheatsheet
 ## Language
 * [Object-Oriented Programming in Python vs Java](https://realpython.com/oop-in-python-vs-java/#inheritance-and-polymorphism)
 ```python
