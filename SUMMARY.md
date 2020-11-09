@@ -8,7 +8,7 @@
 
 ## Java
 
-* [Java Basics](java/java.md)
+* [Inner classes and lambdas](java/lambdas.md)
 * [JPA](java/jpa.md)
 
 ## Python
@@ -26,7 +26,7 @@
 
 * [Architecture](misc/architecture.md)
 * [FOSSGIS](misc/fossgis.md)
-* [FOSSGIS](misc/editors.md)
+* [Editors](misc/editors.md)
 * [git](misc/git.md)
 * [RegEx](misc/regex.md)
 * [RESTful](misc/restful.md)

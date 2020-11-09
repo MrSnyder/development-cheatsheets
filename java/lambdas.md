@@ -1,10 +1,16 @@
-# Java Basics
+# Inner classes and lambdas
 
 * Tutorial: [Jenkov Tutorials](http://tutorials.jenkov.com/)
 
-## Inner, anonymous classes and lambdas
+## Variants
 
-Where does this appear?
+* Multiple \(non-nested\) classes in a single .java file
+* Inner class: Has access to members of the outer class
+* Static inner class: Has access to \(only\) static members of the outer class
+* Anonymous class
+  * Has access to final variables of the current scope   
+* Method-level class
+  * Has access to final variables of the current scope 
 
 ```java
 import java.util.Arrays;
@@ -18,69 +24,17 @@ public class Sorting {
 
     public static void main(String[] args) {
         List<String> items = Arrays.asList("Martin", "Bert", "Markus");
-        System.out.println("Before: " + items);
-        // sort is a static method of class Collections
 
-        // "normal" class
+        // standard class
         Collections.sort(items, new StandardComparator());
 
         // static inner class
         Collections.sort(items, new InnerComparator1());
 
-        // non-static inner class (this is not allowed in static methods!!!)
-        // Collections.sort(items, new InnerComparator2());
+        // non-static inner class
+        new Sorting().sort();
 
-        // anonymous class
-        // how to spot it:
-        // new TypeName () { ... }
-        //  ^     ^            ^
-        //  a     b            c
-        // a: new must be present
-        // b: usually the name of an Interface
-        // c: has an implementation block
-        //
-        // advantage: briefest way
-        // disadvantage: can not be re-used
-        // disadvantage: has no describing name
-        Collections.sort(items, new Comparator<String> () {                    
-            @Override
-            public int compare(String s1, String s2) {
-                if (s1.length() > s2.length()) {
-                    return 1;
-                }
-                if (s1.length() < s2.length()) {
-                    return -1;
-                }
-                return 0;
-            }
-        });
-
-        // lambda (variant 1)
-        Collections.sort(items, (String s1, String s2) -> {
-            if (s1.length() > s2.length()) {
-                return 1;
-            }
-            if (s1.length() < s2.length()) {
-                return -1;
-            }
-            return 0;
-        });
-
-        // lambda (variant 2)
-        Collections.sort(items, (s1, s2) -> {
-            if (s1.length() > s2.length()) {
-                return 1;
-            }
-            if (s1.length() < s2.length()) {
-                return -1;
-            }
-            return 0;
-        });
-
-        // lambda (variant 3)
-        Collections.sort(items, (s1, s2) -> s1.length() - s2.length());
-
-        // equivalent anonymous class
+        // anonymous inner class
         Collections.sort(items, new Comparator<String> () {                    
             @Override
             public int compare(String s1, String s2) {
@@ -88,10 +42,22 @@ public class Sorting {
             }
         });
 
-        System.out.println("After: " + items);
+        // lambda (variant 1)
+        Collections.sort(items, (String s1, String s2) -> {
+            return s1.length() - s2.length();
+        });
+
+        // lambda (variant 2)
+        Collections.sort(items, (s1, s2) -> {
+            return s1.length() - s2.length();
+        });
+
+        // lambda (variant 3)
+        Collections.sort(items, (s1, s2) -> s1.length() - s2.length());
     }
 
-    public void doSomething() {
+    public void sort() {
+        // non-static inner class (not possible in static methods)
         List<String> items = Arrays.asList("Martin", "Bert", "Markus");
         Collections.sort(items, new InnerComparator2());
     }
@@ -100,47 +66,29 @@ public class Sorting {
 
         @Override
         public int compare(String s1, String s2) {
-            if (s1.length() > s2.length()) {
-                return 1;
-            }
-            if (s1.length() < s2.length()) {
-                return -1;
-            }
-            return 0;
+            return s1.length() - s2.length();
         }
     }
 
-    // a non-static inner class instance has a reference to the enclosing instance
+    // a non-static inner class instance holds a reference to the enclosing instance
     public class InnerComparator2 implements Comparator<String> {
 
         @Override
         public int compare(String s1, String s2) {
-            if (s1.length() > s2.length()) {
-                return 1;
-            }
-            if (s1.length() < s2.length()) {
-                return -1;
-            }
-            return 0;
+            return s1.length() - s2.length();
         }
     }
 }
 ```
 
-```bash
+```java
 import java.util.Comparator;
 
 public class StandardComparator implements Comparator<String> {
 
     @Override
     public int compare(String s1, String s2) {
-        if (s1.length() > s2.length()) {
-            return 1;
-        }
-        if (s1.length() < s2.length()) {
-            return -1;
-        }
-        return 0;
+        return s1.length() - s2.length();
     }
 
 }
@@ -190,7 +138,7 @@ Lambda expressions can be used wherever an instance of a functional interface is
 (Person p) -> p.toString()
 Person::toString // unbound method reference
 
-(String    s) -> Integer.parseInt(s)
+(String s) -> Integer.parseInt(s)
 Integer::parseInt // static method reference
 ```
 
@@ -199,14 +147,3 @@ Integer::parseInt // static method reference
 * [http://tutorials.jenkov.com/java-functional-programming/streams.html](http://tutorials.jenkov.com/java-functional-programming/streams.html)
 * [https://www.sitepoint.com/java-8-streams-filter-map-reduce/](https://www.sitepoint.com/java-8-streams-filter-map-reduce/)
 * [https://www.simplilearn.com/what-is-mapreduce-and-why-it-is-important-article](https://www.simplilearn.com/what-is-mapreduce-and-why-it-is-important-article)
-
-## Inner / nested classes
-
-* Multiple \(non-nested\) classes in a single .java file
-* Inner class: Has access to members of the outer class
-* Static inner class: Has access to \(only\) static members of the outer class
-* Anonymous class
-  * Has access to final variables of the current scope   
-* Method-level class
-  * Has access to final variables of the current scope 
-
