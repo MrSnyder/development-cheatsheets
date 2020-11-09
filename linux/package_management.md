@@ -1,4 +1,4 @@
-# Package management
+# Linux package management
 
 ## Debian/Ubuntu: apt
 

@@ -1,3 +1,3 @@
 # Introduction
 
-Assorted braindumps for software development-related topics and technologies.
+MrSnyder's personal swap file for software development-related topics and technologies.

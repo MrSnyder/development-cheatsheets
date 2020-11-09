@@ -2,6 +2,10 @@
 
 * [Introduction](README.md)
 
+## Linux
+
+* [Linux Package management](linux/package_management.md)
+
 ## Java
 
 * [Java Basics](java/java.md)
@@ -15,14 +19,15 @@
 ## Docker
 
 * [Docker Basics](docker/basics.md)
+* [Docker Compose](docker/compose.md)
+* [Dockerfiles](docker/dockerfiles.md)
 
 ## Misc
 
 * [Architecture](misc/architecture.md)
 * [FOSSGIS](misc/fossgis.md)
+* [FOSSGIS](misc/editors.md)
 * [git](misc/git.md)
-* [Package management](misc/package_management.md)
 * [RegEx](misc/regex.md)
 * [RESTful](misc/restful.md)
 * [SQL](misc/sql.md)
-
