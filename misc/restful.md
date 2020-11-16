@@ -168,6 +168,7 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
 * [https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api](https://www.baeldung.com/swagger-2-documentation-for-spring-rest-api)
 * [http://localhost:8080/v2/api-docs](http://localhost:8080/v2/api-docs)
 * [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+* [Remove Basic Error Controller](https://stackoverflow.com/questions/32941917/remove-basic-error-controller-in-springfox-swaggerui)
 
 ### Infinite recursion
 

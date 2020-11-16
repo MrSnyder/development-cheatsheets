@@ -8,6 +8,7 @@
 
 * Polymorphism
 * Reflection
+* Active Record vs. Data Mapper (ORMs)
 
 ## Reactive programming
 

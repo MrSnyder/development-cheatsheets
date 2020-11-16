@@ -1,6 +1,13 @@
 # Linux package management
 
-## Debian/Ubuntu: apt
+## Debian/Ubuntu
+
+### Installing / removing packages
+
+```bash
+# install downloaded deb
+sudo dpkg -i code_1.51.1-1605051630_amd64.deb
+```
 
 ### Searching / locating packages
 

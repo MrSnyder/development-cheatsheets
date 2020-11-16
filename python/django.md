@@ -20,4 +20,8 @@ python manage.py migrate
 python manage.py shell
 # create user for admin site
 python manage.py createsuperuser
+# tests
+python manage.py test tests.unit_tests.service_app.test_tables:ServiceTestCase.test_wms_service_table_sorting
+# only run tests that failed before
+python manage.py test tests --failed
 ```
