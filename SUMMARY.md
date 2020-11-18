@@ -4,6 +4,7 @@
 
 ## Linux
 
+* [Linux keyboard shortcuts](linux/shortcuts.md)
 * [Linux Package management](linux/package_management.md)
 
 ## Java
@@ -22,6 +23,10 @@
 * [Docker Compose](docker/compose.md)
 * [Dockerfiles](docker/dockerfiles.md)
 
+## Databases
+
+* [SQL](databases/sql.md)
+
 ## Misc
 
 * [Architecture](misc/architecture.md)
@@ -30,4 +35,3 @@
 * [git](misc/git.md)
 * [RegEx](misc/regex.md)
 * [RESTful](misc/restful.md)
-* [SQL](misc/sql.md)
