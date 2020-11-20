@@ -13,10 +13,12 @@ commit -m 'Message'
 
 ## Working with branches
 ```bash
-# delete remote branch
-git branch -D origin :branchname
-# prune tracking branches not on the remote
+# delete remote branch 'mybranch'
+git push origin --delete mybranch
+# prune tracked branches that do not exist on the remote anymore
 git remote prune origin
+# show branches that have been merged (into the current branch)
+git branch -a --merged
 ```
 
 ## Working with the stash
@@ -31,7 +33,13 @@ git checkout stash@{0} -- <filename>
 
 ## Pulling / pushing
 ```bash
-# fetch upstream origin and merge upstream/master into master
+# fetch changes from origin
+git fetch
+# fetch changes from upstream
+git fetch upstream
+# fetch changes from all remotes
+git fetch --all
+# fetch upstream and merge upstream/master into the current branch
 git pull upstream master
 ```
 
