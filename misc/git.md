@@ -15,7 +15,7 @@ commit -m 'Message'
 ```bash
 # delete remote branch 'mybranch'
 git push origin --delete mybranch
-# prune tracked branches that do not exist on the remote anymore
+# prune remote branches that do not exist on the remote anymore
 git remote prune origin
 # show branches that have been merged (into the current branch)
 git branch -a --merged
