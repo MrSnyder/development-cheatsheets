@@ -17,3 +17,10 @@ uninstall plugin validate_password;
 
 * [https://stackoverflow.com/questions/5239376/mysql-localhost-127-0-0-1-problem](https://stackoverflow.com/questions/5239376/mysql-localhost-127-0-0-1-problem)
 
+
+## PostgreSQL
+
+```bash
+# db backup (redirected to measure size)
+pg_dump -h localhost -U <username> -Fc <dbname> > mydump.tar | wc -l
+```

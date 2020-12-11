@@ -12,6 +12,9 @@ a={}
 a.get("b",{}).get("c")
 ```
 
+## Gotchas
+
+* [Mutable Default Arguments](https://docs.python-guide.org/writing/gotchas/)
 
 ## List comprehension
 
@@ -21,6 +24,36 @@ names = ['Apple', 'Banana', 'wtf']
 names_length = [len(v) for v in a]
 name_to_length = {v:len(v) for v in a if len(v) < 4}
 ```
+
+## Closures
+
+* We must have a nested function (function inside a function).
+* The nested function must refer to a value defined in the enclosing function.
+* The enclosing function must return the nested function.
+
+```python
+def make_multiplier_of(n):
+    def multiplier(x):
+        return x * n
+    return multiplier
+
+
+# Multiplier of 3
+times3 = make_multiplier_of(3)
+
+# Multiplier of 5
+times5 = make_multiplier_of(5)
+
+# Output: 27
+print(times3(9))
+
+# Output: 15
+print(times5(3))
+
+# Output: 30
+print(times5(times3(2)))
+```
+
 
 ## Dependency management
 
@@ -100,6 +133,31 @@ class TestBlog(TestCase):
         blog.reset_mock() # Reset the mock object
         
         blog.posts.assert_not_called() # After resetting, posts has not been called.
+```
+
+## __main__
+
+```python
+if __name__ == '__main__':
+    # only execute the following if this module is main (start module)
+    # (otherwise __main__ would be the filename of the module without extension)
+    print_hi('PyCharm')
+```
+
+## Writing XML
+
+```python
+from xml.etree import ElementTree
+from xml.etree.ElementTree import Element
+
+ns = {
+    'atom': 'http://www.w3.org/2005/Atom'
+}
+
+ElementTree.register_namespace("atom", "http://www.w3.org/2005/Atom")
+element = Element("{http://www.w3.org/2005/Atom}feed")
+output = ElementTree.tostring(element)
+print(output)
 ```
 
 ## Misc

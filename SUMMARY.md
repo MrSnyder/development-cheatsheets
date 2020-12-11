@@ -17,6 +17,12 @@
 * [Python Basics](python/python.md)
 * [Django](python/django.md)
 
+## JavaScript
+
+* [Basics](js/basics.md)
+* [Angular](js/angular.md)
+* [Tools](js/tools.md)
+
 ## Docker
 
 * [Docker Basics](docker/basics.md)
@@ -30,8 +36,9 @@
 ## Misc
 
 * [Architecture](misc/architecture.md)
-* [FOSSGIS](misc/fossgis.md)
 * [Editors](misc/editors.md)
+* [FOSSGIS](misc/fossgis.md)
 * [git](misc/git.md)
 * [RegEx](misc/regex.md)
 * [RESTful](misc/restful.md)
+* [XML](misc/xml.md)

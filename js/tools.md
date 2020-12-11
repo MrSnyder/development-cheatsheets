@@ -32,4 +32,4 @@ Webpack is a static module bundler for modern JavaScript applications.
 
 ## Chrome
 
-* Find resources by content: F12 -> Network -> Looking glass
+* Find resources by content: F12 -> Network -> "Looking glass"
