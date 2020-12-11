@@ -6,6 +6,7 @@
 
 * [Linux keyboard shortcuts](linux/shortcuts.md)
 * [Linux Package management](linux/package_management.md)
+* [Desktop](linux/desktop.md)
 
 ## Java
 
