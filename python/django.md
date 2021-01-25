@@ -24,6 +24,11 @@ from shop.models import Product
 Product.objects.all() #to get all the products
 ```
 
+## Forms
+
+* [How to Render Django Form Manually](https://simpleisbetterthancomplex.com/article/2017/08/19/how-to-render-django-form-manually.html)
+* [Django Custom Widget With 3 Examples](https://blog.ihfazh.com/django-custom-widget-with-3-examples.html)
+
 ## i18n
 ```bash
 # create "locale/de/LC_MESSAGES/django.po" from gettext calls (code) and lang directives (templates)
