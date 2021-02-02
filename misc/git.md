@@ -53,6 +53,14 @@ git branch master origin/master
 git checkout master
 ```
 
+## Submodules
+```bash
+# pull (including submodules)
+git pull --recurse-submodules
+# adding a submodule
+git submodule add git@github.com:yourname/projectname.git path-in-repo
+```
+
 ## Storing passwords for remote repos (https)
 
 https://www.softwaredeveloper.blog/git-credential-storage-libsecret
